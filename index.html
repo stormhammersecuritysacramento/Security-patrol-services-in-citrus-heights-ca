@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stormhammer Security | #1 Security Patrol in Citrus Heights, CA</title>
+    <meta name="description" content="Stormhammer Security provides 24/7 professional security patrol in Citrus Heights, CA. Specialized in apartment, retail, and construction site protection. Licensed PPO #121830.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #050505; color: #fff; margin: 0; scroll-behavior: smooth; }
+        .hero-viewport { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; }
+        .fade-in { animation: fadeIn 0.5s ease-in; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        .seo-content p { margin-bottom: 1.5rem; color: #94a3b8; line-height: 1.8; }
+        .seo-content h2 { color: #fff; font-weight: 800; font-size: 1.875rem; margin-top: 3rem; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: -0.025em; }
+        .seo-content h3 { color: #3b82f6; font-weight: 700; font-size: 1.25rem; margin-top: 2rem; margin-bottom: 0.75rem; }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const { useEffect } = React;
+
+        const PHONE = "530-902-9390";
+        const PHONE_HREF = "tel:+15309029390";
+        const PPO = "PPO #121830";
+        const EMAIL = "sales@stormhammersecurity.com";
+
+        const App = () => {
+            useEffect(() => {
+                lucide.createIcons();
+            }, []);
+
+            const services = [
+                { img: "IMG_0418.png", title: "Apartments" },
+                { img: "IMG_0417.png", title: "Retail Centers" },
+                { img: "IMG_0416.png", title: "Construction" }
+            ];
+
+            return (
+                <div className="fade-in">
+                    {/* --- MAIN HERO CONVERSION ZONE --- */}
+                    <section className="hero-viewport px-6 text-center">
+                        <div className="mb-6 flex justify-center">
+                            <div className="bg-blue-600 p-3 rounded-xl shadow-[0_0_20px_rgba(37,99,235,0.4)]">
+                                <i data-lucide="shield" className="w-8 h-8 text-white"></i>
+                            </div>
+                        </div>
+                        
+                        <h1 className="text-5xl font-black tracking-tighter italic leading-none mb-2 uppercase">
+                            STORMHAMMER
+                        </h1>
+                        <p className="text-blue-500 font-mono text-sm tracking-[0.2em] uppercase font-bold mb-8">
+                            Citrus Heights Patrol
+                        </p>
+                        
+                        <div className="space-y-4 max-w-xs mx-auto w-full">
+                            <a href={PHONE_HREF} className="flex items-center justify-center gap-3 bg-blue-600 hover:bg-blue-700 text-white w-full py-5 rounded-2xl font-black text-2xl shadow-xl transition-transform active:scale-95">
+                                <i data-lucide="phone" className="w-6 h-6"></i>
+                                {PHONE}
+                            </a>
+                            <a href={`mailto:${EMAIL}`} className="block w-full py-4 bg-white/5 border border-white/10 rounded-xl font-bold text-slate-300 hover:bg-white/10 transition">
+                                Email Quote Request
+                            </a>
+                        </div>
+
+                        <div className="mt-12 grid grid-cols-3 gap-2 max-w-sm mx-auto">
+                            {services.map((s, idx) => (
+                                <div key={idx} className="relative aspect-[3/4] rounded-lg overflow-hidden border border-white/5">
+                                    <img src={s.img} className="w-full h-full object-cover opacity-50" alt={s.title} />
+                                    <div className="absolute inset-0 flex items-end justify-center pb-2">
+                                        <span className="text-[8px] font-black uppercase tracking-widest text-white bg-black/60 px-1 rounded">{s.title}</span>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+
+                        <p className="mt-8 text-[9px] text-slate-600 uppercase tracking-[0.4em] font-bold">
+                            Licensed California {PPO}
+                        </p>
+                        
+                        <div className="mt-4 animate-bounce opacity-30">
+                            <i data-lucide="chevron-down" className="mx-auto"></i>
+                        </div>
+                    </section>
+
+                    {/* --- SEO CONTENT POWERHOUSE --- */}
+                    <section className="bg-neutral-950 py-20 px-6 border-t border-white/5">
+                        <div className="container mx-auto max-w-4xl seo-content">
+                            <h2>The Ultimate Guide to Private Security & Patrol in Citrus Heights, CA</h2>
+                            <p>
+                                When it comes to protecting your property in Northern California, specifically the unique landscape of <strong>Citrus Heights</strong>, one-size-fits-all security doesn't work. Whether you are managing an apartment complex near Sunrise Mall, a retail center along Greenback Lane, or an industrial warehouse off Antelope Road, the security challenges you face are localized and demanding. Stormhammer Security, Inc. (PPO #121830) has established itself as the premier choice for <strong>Citrus Heights security patrol services</strong> by focusing on visible deterrence, rapid dispatch, and GPS-verified accountability.
+                            </p>
+
+                            <h3>Why Private Patrol is Essential in Citrus Heights (95610, 95611, 95621)</h3>
+                            <p>
+                                Citrus Heights is a vibrant community with a mix of residential neighborhoods and massive commercial corridors. However, high-traffic areas like the Birdcage Center or the Citrus Heights Marketplace naturally attract issues such as loitering, vehicle break-ins, and retail theft. While the Citrus Heights Police Department does an incredible job, their primary focus is 911 emergency response. Private security serves as the proactive layer—preventing the crime before the call is even necessary.
+                            </p>
+                            <p>
+                                Our marked vehicle patrols act as a moving fortress. When a potential trespasser or vandal sees a Stormhammer Security vehicle with a professional light bar and clear branding, they move on. Visible deterrence is the most cost-effective way to lower your insurance premiums and increase the peace of mind for your tenants and customers.
+                            </p>
+
+                            <h3>Apartment Complex Security: Protecting Residents and ROI</h3>
+                            <p>
+                                Multi-family housing in Citrus Heights represents some of our most critical patrol work. Apartment managers face constant battles with unauthorized parking, dumpster diving, and late-night noise complaints. Stormhammer Security specializes in "Quality of Life" patrols. We don't just drive through; we check breezeways, verify pool gate security, and ensure laundry rooms are locked and safe. By providing <strong>GPS-verified daily activity reports (DARs)</strong>, we give property managers the evidence they need for legal evictions or insurance claims.
+                            </p>
+
+                            <h3>Retail and Shopping Center Protection</h3>
+                            <p>
+                                From the Sunrise Mall corridor to smaller strip centers, retail theft and "smash-and-grab" incidents have become a major concern for California business owners. Our officers are trained in "Aggressive Hospitality"—meaning we are polite to your customers but a firm deterrent to those intending to shoplift or loiter. After-hours, our officers perform physical door checks to ensure your business is locked up tight, preventing the devastating loss of inventory that can occur overnight.
+                            </p>
+
+                            <h3>Industrial, Warehouse, and Construction Site Security</h3>
+                            <p>
+                                Construction sites in Citrus Heights are prime targets for copper theft and heavy equipment vandalism. A single night of theft can set a project back thousands of dollars and weeks of time. Stormhammer's <strong>construction site security</strong> involves random-interval patrols that keep criminals guessing. We check perimeters, verify gate integrity, and monitor for fire hazards or water leaks that could cause catastrophic damage during off-hours.
+                            </p>
+
+                            <h3>Modern Tech: GPS-Tracked Patrols</h3>
+                            <p>
+                                Gone are the days of "ghost patrols" where you wonder if the guard actually showed up. Stormhammer Security utilizes industry-leading GPS tracking. Every time our officer enters your property, their location, timestamp, and photos are recorded in real-time. You receive these reports every morning, ensuring you are getting exactly what you pay for. 
+                            </p>
+
+                            <h3>Comprehensive Security Coverage in the Sacramento Region</h3>
+                            <p>
+                                While our heart is in Citrus Heights, we provide professional security services across the surrounding areas, including:
+                            </p>
+                            <ul className="list-disc pl-6 mb-8 text-slate-400 space-y-2">
+                                <li><strong>Antelope Security Patrol:</strong> Protecting residential HOAs and parks.</li>
+                                <li><strong>Roseville Commercial Security:</strong> Deterring theft in high-end retail districts.</li>
+                                <li><strong>Orangevale & Fair Oaks:</strong> Maintaining safety for local business strips.</li>
+                                <li><strong>North Highlands Industrial:</strong> Securing warehouses and transit hubs.</li>
+                            </ul>
+
+                            <h2>Frequently Asked Questions About Citrus Heights Security</h2>
+                            <h3>Is private patrol cheaper than a stationary guard?</h3>
+                            <p>
+                                Yes. For many properties, a 24/7 stationary guard is financially impossible. Mobile patrol allows you to pay for the "check-ins" you need. A marked car arriving 3-5 times a night at random intervals provides a similar level of deterrence for a fraction of the cost.
+                            </p>
+                            <h3>What happens if a crime is in progress?</h3>
+                            <p>
+                                Our officers are trained to observe and report, and to intervene when safe and within the scope of their BSIS training. We have a direct line to local law enforcement and coordinate with them to ensure suspects are apprehended while minimizing liability for the property owner.
+                            </p>
+
+                            <p className="italic text-sm">
+                                Stormhammer Security, Inc. is a fully licensed and insured California Private Patrol Operator. Our commitment to the Citrus Heights community is unmatched. We live here, we work here, and we take the safety of our neighborhoods personally.
+                            </p>
+                        </div>
+                    </section>
+
+                    {/* Footer */}
+                    <footer className="py-12 text-center border-t border-white/5 bg-black">
+                        <i data-lucide="shield" className="w-6 h-6 text-blue-900 mx-auto mb-4"></i>
+                        <p className="text-[10px] text-slate-600 uppercase tracking-widest leading-loose">
+                            © 2026 Stormhammer Security, Inc. <br/> 
+                            Licensed California PPO #121830 <br/>
+                            Serving Citrus Heights, Antelope, and Sacramento County
+                        </p>
+                    </footer>
+                </div>
+            );
+        };
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
+    </script>
+</body>
+</html>
